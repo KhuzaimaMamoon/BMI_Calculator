@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI_calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 id="heading">
+        BMI Calculator
+    </h1>
+</header>
+<main>
+    <form id="form">
+        <label for="height">Height in cm:</label>
+        <input type="text" id="height"  required>
+        <br>
+        <label for="weight">Weight in kg:</label>
+        <input type="text" id="weight" required>
+        <div id="result">Result</div>
+        <button id="button">Calculate</button>
+    </form>
+    <div id="category">
+        <h3>BMI Categories:</h3><br>
+            Underweight = <18.5  (Light Blue)<br>
+            Normal weight = 18.5–24.9  (Light Green)<br>
+            Overweight = 25–29.9  ( Orange)<br>
+            Obesity = BMI of 30 or greater  (Red)<br>
+
+    </div>
+</main>
+<script src="javascript.js"></script>
+</body>
+</html>
