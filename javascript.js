@@ -7,8 +7,10 @@ form.addEventListener("submit", function (e) {
     const result = document.querySelector("#result");
     if (height === "" || height < 0 || isNaN(height)) {
         result.innerHTML = `Invalid Height ${height}`;
+        alert("Enter valid height");
     } else if (weight === "" || weight < 0 || isNaN(weight)) {
-        result.innerHTML = `Invalid Height ${weight}`;
+        result.innerHTML = `Invalid weight ${weight}`;
+        alert("Enter valid weight");
     } else {
         const body = document.querySelector("body");
         const heading = document.querySelector("#heading");
